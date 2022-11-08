@@ -13,7 +13,7 @@ DownMoneyTotal = [0.0, 0.0, 0.0, 0.0]  # ARRAY REAL
 
 
 def ScreenDisplay():  # DECLARING PROCEDURE
-    print("\n\t>>>>>>>     TRAIN JOURNEY DISPLAY     <<<<<<<\n")
+    print("\n\t               List of Train Yourney     \n")
     for index in range(0, 4):
         if UpSeats[index] != 0:
             print(
@@ -51,7 +51,7 @@ def ScreenDisplay():  # DECLARING PROCEDURE
                 "\t| Closed!",
             )
         print()
-        print("-----------------------\n")
+        print("------------\n")
 
 
 # ENDPROCEDURE
@@ -76,7 +76,7 @@ while choice != "False":
     while UpTrip not in range(0, 4):
         UpTrip = int(input("Error! Enter Journey number from (1, 2, 3, 4): ")) - 1
     #
-    print("\n----- Return Hours Available -----\n")
+    print("\n      Return Hours Available      \n")
     for num in range(UpTrip, 4):
         print(
             "Journey No:",
